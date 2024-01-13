@@ -30,3 +30,22 @@ Route::get('/word', function () {
 Route::get('/comment', function () {
     return view('comment', []);
 });
+
+Route::get('/if', function () {
+    return view('if', ["hobbies" => [
+        "eat", "coding", "fishing"
+    ]]);
+});
+
+
+Route::get('/unless', function () {
+    return view('unless', ["isAdmin" => false]);
+});
+
+Route::get('/isset-empty', function () {
+    return view('isset-empty', ['name' => "Arief Rachman Hakim"]);
+});
+
+Route::get('/env', function () {
+    return view('env', []);
+});
