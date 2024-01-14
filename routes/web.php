@@ -49,3 +49,18 @@ Route::get('/isset-empty', function () {
 Route::get('/env', function () {
     return view('env', []);
 });
+Route::get('/switch', function () {
+    return view('switch', ['name' => "arief"]);
+});
+Route::get('/class', function () {
+    return view('class', ['hobbies' => [
+        [
+            'name' => "Coding",
+            'love' => true
+        ],
+        [
+            'name' => "Gaming",
+            'love' => false
+        ],
+    ]]);
+});
