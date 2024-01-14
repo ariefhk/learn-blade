@@ -64,3 +64,7 @@ Route::get('/class', function () {
         ],
     ]]);
 });
+
+Route::get('/include', function () {
+    return view('layouts.body', ['title' => "test include", 'user' => 'guest', 'admin' => 'arief']);
+});
